@@ -1,3 +1,9 @@
+# Custom Bitters Styles
+
+This is my version of bitters. It uses some Sass maps for better managing variables, scales the typography for smaller screens, adds more specific grid settings, and other general tweaks to the Bitters framework. Feel free to look through it and try it out yourself if you're a big Bitters fan too!
+
+The original Bitters README info now follows for basic setup.
+
 [![Bitters](http://images.thoughtbot.com/bourbon/bitters-logo.svg)](http://bitters.bourbon.io)
 
 [![Gem Version](http://img.shields.io/gem/v/bitters.svg?style=flat)](https://rubygems.org/gems/bitters)
