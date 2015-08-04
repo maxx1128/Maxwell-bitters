@@ -7,11 +7,11 @@ $base-font-size: 1em;
 $base-font-scale: 0;
 
 // Line height
-$base-line-height: 1.75;
-$heading-line-height: 1;
+$base-line-height: 1.6;
+$heading-line-height: 1.1;
 
 // Other Sizes
-$base-border-radius: 8px;
+$base-border-radius: 5px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
@@ -38,7 +38,8 @@ $colors: (
  
 // Typography Components
 $modular-scale-ratio: $minor-third;
-$scaled-font-ratio: .85;
+$modular-scale-base: $base-font-size;
+$scaled-font-ratio: .9;
 
 // Font Colors
 $base-font-color: color(dark-gray);
