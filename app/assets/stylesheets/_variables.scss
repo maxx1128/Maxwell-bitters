@@ -7,17 +7,18 @@ $base-font-size: 1em;
 $base-font-scale: 0;
 
 // Line height
-$base-line-height: 1.5;
-$heading-line-height: 1.2;
+$base-line-height: 1.75;
+$heading-line-height: 1.25;
 
 // Other Sizes
-$base-border-radius: 3px;
+$base-border-radius: 8px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
 $colors: (
+  white: #fff,
   blue: #477dca,
   dark-gray: #333,
   medium-gray: #999,
@@ -37,7 +38,7 @@ $colors: (
  
 // Typography Components
 $modular-scale-ratio: $minor-third;
-$scaled-font-ratio: .8;
+$scaled-font-ratio: .85;
 
 // Font Colors
 $base-font-color: color(dark-gray);
@@ -48,7 +49,7 @@ $base-border-color: color(light-gray);
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: #fff;
+$base-background-color: color(white);
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms

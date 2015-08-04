@@ -29,7 +29,7 @@ $types: (
    #{$type} {
       font-size: $scaled-font-size;
 
-      @media screen and (min-width: $medium-screen) {
+      @media screen and (min-width: $tablet-screen) {
         font-size: $main-font-size;
       }
    }   
@@ -43,7 +43,7 @@ h5,
 h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: ($small-spacing / 10) 0 $small-spacing;
 }
 
 p {
