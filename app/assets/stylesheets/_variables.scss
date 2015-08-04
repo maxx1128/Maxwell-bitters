@@ -35,8 +35,9 @@ $colors: (
   @return null;
 }
  
-// _component.scss
-// Add other variables here!
+// Typography Components
+$modular-scale-ratio: $minor-third;
+$scaled-font-ratio: .8;
 
 // Font Colors
 $base-font-color: color(dark-gray);

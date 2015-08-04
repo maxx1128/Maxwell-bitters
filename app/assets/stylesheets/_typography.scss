@@ -6,12 +6,11 @@ body {
   line-height: $base-line-height;
 }
 
-$modular-scale-ratio: $minor-third;
-// try $minor-seventh, $perfect-fifth, $major-third, or other scales
-
 
 // Include and add any elements you want and where they fall from
 // the base font scale.
+
+// $base: 3;
 
 $types: (
    h1: $base-font-scale + 6,
@@ -24,8 +23,15 @@ $types: (
 );
 
 @each $type, $scale in $types {
+  $main-font-size: modular-scale($scale);
+  $scaled-font-size: $main-font-size * $scaled-font-ratio;
+
    #{$type} {
-      font-size: modular-scale($scale);
+      font-size: $scaled-font-size;
+
+      @media screen and (min-width: $medium-screen) {
+        font-size: $main-font-size;
+      }
    }   
 }
 
