@@ -26,6 +26,8 @@ gulp.task("connect", function() {
   });
 });
 
-gulp.task("default", ["sass", "connect"], function() {
-  gulp.watch(paths.scss, ["sass"]);
+gulp.task('watch', function(){
+  gulp.watch(['app/assets/stylesheets/*.scss'], ['sass']);
 });
+
+gulp.task("default", ["sass", "connect", "watch"]);

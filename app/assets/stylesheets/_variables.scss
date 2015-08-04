@@ -4,6 +4,7 @@ $heading-font-family: $base-font-family;
 
 // Font Sizes
 $base-font-size: 1em;
+$base-font-scale: 0;
 
 // Line height
 $base-line-height: 1.5;
@@ -16,17 +17,33 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$colors: (
+  blue: #477dca,
+  dark-gray: #333,
+  medium-gray: #999,
+  light-gray: #ddd
+);
+
+// Use this helper function to easily get the colors
+// font-color: color(blue);
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+ 
+// _component.scss
+// Add other variables here!
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: color(dark-gray);
+$action-color: color(blue);
 
 // Border
-$base-border-color: $light-gray;
+$base-border-color: color(light-gray);
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
